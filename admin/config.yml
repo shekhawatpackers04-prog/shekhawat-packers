@@ -1,0 +1,47 @@
+backend:
+  name: github
+  repo: your-github-username/shekhawat-packers
+  branch: main
+  base_path: /admin
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "Himmat Singh" }
+      - { label: "Category", name: "category", widget: "select", options: ["Packaging Tips", "Sustainability", "Product Guide", "Business Tips", "Industry News"] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Excerpt", name: "excerpt", widget: "text", hint: "Brief description (100-150 characters)" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["packaging"] }
+      - { label: "Published", name: "published", widget: "boolean", default: true }
+
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "settings"
+    label: "Settings"
+    folder: "content/settings"
+    create: false
+    fields:
+      - { label: "Company Name", name: "company_name", widget: "string", default: "Shekhawat Packers" }
+      - { label: "Company Email", name: "company_email", widget: "string" }
+      - { label: "Company Phone", name: "company_phone", widget: "string" }
+      - { label: "Company WhatsApp", name: "company_whatsapp", widget: "string" }
+      - { label: "Company Address", name: "company_address", widget: "text" }
+      - { label: "Company Logo", name: "company_logo", widget: "image" }
+      - { label: "Site Title", name: "site_title", widget: "string" }
+      - { label: "Site Description", name: "site_description", widget: "text" }

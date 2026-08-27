@@ -1,0 +1,9 @@
+# Netlify Redirects Configuration
+# https://docs.netlify.com/routing/redirects/
+
+# Admin panel
+/admin/*  /admin/index.html  200
+
+# Default to home page for single-page app routes
+# This keeps URLs clean while serving separate pages
+/*    /index.html   200

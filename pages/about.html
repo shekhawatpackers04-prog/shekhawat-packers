@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/webp" href="/logo.webp">
+<title>About Us | Shekhawat Packers - Packaging Materials Supplier</title>
+<meta name="description" content="Learn about Shekhawat Packers - trusted wholesale packaging supplier in Gandhi Nagar, Delhi with 10+ years of experience.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+.about-hero {
+  background: linear-gradient(135deg, rgba(232, 98, 42, 0.1) 0%, rgba(244, 192, 122, 0.1) 100%);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.about-intro {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-main);
+  margin-bottom: 20px;
+}
+
+.about-section {
+  margin-bottom: 24px;
+}
+
+.about-section h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-section h3 i {
+  color: var(--orange);
+  font-size: 24px;
+}
+
+.about-section p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-desc);
+  margin-bottom: 10px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.stat-card {
+  background: var(--bg-feature);
+  border: 1px solid var(--bg-feature-bd);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.stat-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-label);
+  margin-top: 6px;
+}
+
+.values-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.value-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px;
+  background: var(--bg-card);
+  border-radius: 8px;
+}
+
+.value-item i {
+  color: var(--orange);
+  font-size: 16px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.value-item strong {
+  color: var(--text-main);
+}
+
+.value-item p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.team-card {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-card-bd);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+}
+
+.team-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--orange), var(--orange-lt));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+  font-size: 24px;
+  color: white;
+}
+
+.team-name {
+  font-weight: 600;
+  color: var(--text-main);
+  font-size: 13px;
+}
+
+.team-role {
+  font-size: 11px;
+  color: var(--text-label);
+  margin-top: 2px;
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()">
+  <i class="fa-solid fa-moon icon-moon"></i>
+  <i class="fa-solid fa-sun icon-sun"></i>
+</button>
+
+<div class="card-wrap">
+  
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="trusted-badge">
+      <i class="fa-solid fa-shield-halved"></i>
+      <span>Trusted Packaging<br>Supplier in Delhi NCR</span>
+    </div>
+
+    <a href="/" class="logo-ring-link">
+      <div class="logo-ring">
+        <div class="logo-wrap">
+          <img src="/logo.webp" alt="Shekhawat Packers Logo" class="logo-img">
+        </div>
+      </div>
+    </a>
+
+    <div class="sidebar-rule"></div>
+
+    <div class="prod-tags-label">Our Products</div>
+    <div class="prod-tags">
+      <span class="prod-tag">Corrugated Boxes</span>
+      <span class="prod-tag">BOPP Tapes</span>
+      <span class="prod-tag">Stretch Film</span>
+      <span class="prod-tag">Rubber Bands</span>
+      <span class="prod-tag">Jute Bags</span>
+      <span class="prod-tag">Plastic Bags</span>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <nav class="nav-bar">
+      <div class="nav-brand">Shekhawat Packers</div>
+      <div class="nav-tabs">
+        <a href="/" class="nav-tab">
+          <i class="fa-solid fa-house"></i> Home
+        </a>
+        <a href="/pages/products.html" class="nav-tab">
+          <i class="fa-solid fa-boxes-stacked"></i> Products
+        </a>
+        <a href="/pages/about.html" class="nav-tab active">
+          <i class="fa-solid fa-circle-info"></i> About
+        </a>
+        <a href="/pages/blog.html" class="nav-tab">
+          <i class="fa-solid fa-newspaper"></i> Blog
+        </a>
+      </div>
+    </nav>
+
+    <div class="main-content">
+
+      <div class="page-header">
+        <div class="prod-eyebrow">Who We Are</div>
+        <h1 class="prod-title">About <span>Shekhawat Packers</span></h1>
+      </div>
+
+      <div class="about-hero">
+        <p class="about-intro">
+          <strong>Shekhawat Packers</strong> is a trusted wholesale packaging material supplier serving businesses across Delhi and NCR region. With years of experience and a commitment to quality, we provide the best packaging solutions for your business needs.
+        </p>
+      </div>
+
+      <!-- Our Story -->
+      <div class="about-section">
+        <h3><i class="fa-solid fa-book"></i> Our Story</h3>
+        <p>
+          Founded with a vision to provide high-quality packaging materials to businesses of all sizes, Shekhawat Packers has grown to become a trusted name in the packaging industry. We understand the critical role that proper packaging plays in your business operations.
+        </p>
+        <p>
+          Our journey began with a simple mission: to offer reliable, affordable, and diverse packaging solutions. Today, we serve hundreds of satisfied customers across Delhi NCR, from small startups to established enterprises.
+        </p>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Product Categories</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Customer Satisfaction</div>
+        </div>
+      </div>
+
+      <!-- Why Choose Us -->
+      <div class="about-section">
+        <h3><i class="fa-solid fa-check-circle"></i> Why Choose Us?</h3>
+        <div class="values-list">
+          <div class="value-item">
+            <i class="fa-solid fa-star"></i>
+            <div>
+              <strong>Premium Quality</strong>
+              <p>All our products meet highest industry standards and quality benchmarks</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <i class="fa-solid fa-rupee-sign"></i>
+            <div>
+              <strong>Competitive Pricing</strong>
+              <p>Wholesale rates that help you maximize your profit margins</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <i class="fa-solid fa-truck"></i>
+            <div>
+              <strong>Fast Delivery</strong>
+              <p>Quick and reliable delivery across Delhi NCR region</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <i class="fa-solid fa-headset"></i>
+            <div>
+              <strong>Excellent Support</strong>
+              <p>Dedicated customer service team ready to help you anytime</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <i class="fa-solid fa-leaf"></i>
+            <div>
+              <strong>Eco-Friendly Options</strong>
+              <p>Sustainable packaging solutions for environmentally conscious businesses</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <i class="fa-solid fa-box"></i>
+            <div>
+              <strong>Bulk Orders Welcome</strong>
+              <p>Flexible order quantities with special bulk discounts available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Mission & Values -->
+      <div class="about-section">
+        <h3><i class="fa-solid fa-target"></i> Our Mission & Values</h3>
+        <p>
+          <strong>Mission:</strong> To provide high-quality, affordable packaging materials that enable businesses to operate efficiently and professionally.
+        </p>
+        <p>
+          <strong>Vision:</strong> To be the most trusted packaging supplier in Delhi NCR region, known for reliability, quality, and exceptional service.
+        </p>
+        <p>
+          <strong>Core Values:</strong> Quality, Integrity, Customer Focus, Innovation, and Sustainability
+        </p>
+      </div>
+
+      <!-- Leadership Team -->
+      <div class="about-section">
+        <h3><i class="fa-solid fa-people-group"></i> Our Team</h3>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-avatar"><i class="fa-solid fa-user-tie"></i></div>
+            <div class="team-name">Himmat Singh</div>
+            <div class="team-role">Owner & Founder</div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar"><i class="fa-solid fa-user"></i></div>
+            <div class="team-name">Expert Team</div>
+            <div class="team-role">Sales & Support</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="about-section" style="background: var(--bg-feature); padding: 16px; border-radius: 12px; border: 1px solid var(--bg-feature-bd);">
+        <h3 style="margin-bottom: 12px;"><i class="fa-solid fa-phone"></i> Get In Touch</h3>
+        <p style="margin: 0;">
+          <strong>Phone:</strong> <a href="tel:+919582392131" style="color: var(--orange); text-decoration: none;">+91 95823 92131</a><br>
+          <strong>WhatsApp:</strong> <a href="https://wa.me/919582392131" target="_blank" style="color: var(--orange); text-decoration: none;">Chat with us</a><br>
+          <strong>Email:</strong> <a href="mailto:shekhawatpackers04@gmail.com" style="color: var(--orange); text-decoration: none;">shekhawatpackers04@gmail.com</a><br>
+          <strong>Location:</strong> IX-6278 Jain Mandir Gali, Gandhi Nagar, Dharampura, East Delhi – 110031
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="/js/common.js"></script>
+</body>
+</html>
