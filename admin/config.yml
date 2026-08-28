@@ -1,8 +1,7 @@
 backend:
-  name: github
-  repo: shekhawatpackers04-prog/shekhawat-packers
+ backend:
+  name: git-gateway
   branch: main
-  base_path: /admin
 
 media_folder: public/images
 public_folder: /images
