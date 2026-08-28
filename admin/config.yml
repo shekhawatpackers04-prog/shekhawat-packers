@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-github-username/shekhawat-packers
+  repo: shekhawatpackers04-prog/shekhawat-packers
   branch: main
   base_path: /admin
 
