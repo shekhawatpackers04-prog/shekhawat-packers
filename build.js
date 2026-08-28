@@ -20,7 +20,7 @@ function parseFrontMatter(content) {
   }
 
   const frontMatter = {};
-  
+
   match[1].split("\n").forEach(line => {
     const separator = line.indexOf(":");
 
