@@ -1,7 +1,7 @@
 # Netlify Configuration for Shekhawat Packers
 
 [build]
-  command = ""
+  command = "node build.js"
   publish = "."
 
 # Redirects for routing
